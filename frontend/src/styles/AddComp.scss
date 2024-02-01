@@ -1,0 +1,44 @@
+.addComp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .addCompBg {
+        width: 100%;
+        background-color: rgb(43, 43, 43);
+        border-top: 1px solid whitesmoke;
+        border-bottom: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+
+        .addCompForm {
+            width: 40%;
+        }
+
+        button,
+        input {
+            font-size: 14px;
+        }
+    } 
+
+}
+
+@media screen and (max-width: 660px) {
+    .addComp {
+        font-size: 12px;
+    
+        .addCompBg {
+    
+            .addCompForm {
+                width: 80%;
+            }
+
+            button,
+            input {
+                font-size: 12px;
+            }
+        } 
+    
+    }
+}

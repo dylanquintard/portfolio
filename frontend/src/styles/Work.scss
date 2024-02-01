@@ -1,0 +1,187 @@
+.work {
+  .workItem {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 100px;
+    padding-top: 0;
+    background-color: rgb(43, 43, 43);
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+
+    h4 {
+      font-size: 20px;
+    }
+
+    .workDetails {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 50px;
+    }
+
+    .workImage {
+      width: 40%;
+      
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .workDetails2 {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      border: 1px solid whitesmoke;
+      position: relative; /* Ajout de position relative */
+      box-sizing: border-box; /* Inclure les bordures et marges dans la largeur */
+      padding: 20px;
+
+      .description {
+        margin-bottom: 50px;
+      }
+    
+      .link {
+        margin-top: auto; /* Pousse le lien vers le bas pour rester en bas */
+        a {
+          color: whitesmoke;
+          text-decoration: underline;
+    
+          /* Alignement en bas à droite */
+          position: absolute;
+          bottom: 20px; /* Ajustez selon vos besoins */
+          right: 20px; /* Ajustez selon vos besoins */
+        }
+      }
+    }
+  }
+
+  .workTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      margin: 50px;
+    }
+
+    img {
+      margin-right: 20px;
+      width: 40px;
+    }
+  }
+
+  .workImage {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .tagsAndYear {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
+  
+    .tags {
+      display: flex;
+    }
+  }
+
+  .tag {
+    margin-right: 5px;
+    background-color: whitesmoke;
+    color: rgb(43, 43, 43);
+    border-radius: 5px;
+    min-width: 100px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .work {
+
+    h1 {
+      margin: 30px;
+      font-size: 20px;
+    }
+
+    .workItem {
+      display: flex;
+      flex-direction: column;
+      margin-top: 70px;
+      padding: 10px;
+  
+      h4 {
+        font-size: 16px;
+      }
+  
+      .workDetails {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+  
+      .workImage {
+        width: 80%;
+      }
+  
+      .workDetails2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+  
+        .description {
+          margin-bottom: 50px;
+        }
+      
+        .link {
+          margin-top: auto;
+          a {
+          font-size: 14px;
+            bottom: 10px; 
+            right: 10px; 
+          }
+        }
+      }
+    }
+  
+    .tag {
+      margin-right: 5px;
+      background-color: whitesmoke;
+      color: rgb(43, 43, 43);
+      border-radius: 5px;
+      min-width: 70px;
+      font-family: 'Montserrat';
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .work {
+  
+    .tag {
+      margin-right: 5px;
+      background-color: whitesmoke;
+      color: rgb(43, 43, 43);
+      border-radius: 5px;
+      min-width: 70px;
+      font-family: 'Montserrat';
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}

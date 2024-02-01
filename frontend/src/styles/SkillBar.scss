@@ -1,0 +1,23 @@
+  .skillBar {
+    margin-top: 30px;
+
+    .progressBar {
+        width: 350px;
+        height: 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        position: relative;
+      }
+      
+      .progress {
+        height: 100%;
+        background-color: #4caf50;
+        border-radius: 10px;
+        transition: width 1s ease-in-out;
+      }
+      
+      h3 {
+        margin: 0;
+        padding: 10px;
+      }
+}

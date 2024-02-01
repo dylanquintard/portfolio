@@ -1,0 +1,20 @@
+.editWork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .editWorkBg {
+        width: 100%;
+        background-color: rgb(43, 43, 43);
+        border-top: 1px solid whitesmoke;
+        border-bottom: 1px solid whitesmoke;
+        display: flex;
+        justify-content: center;
+
+        .editWorkForm {
+            width: 60%;
+        }
+    } 
+
+}

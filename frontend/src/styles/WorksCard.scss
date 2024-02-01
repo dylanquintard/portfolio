@@ -1,0 +1,52 @@
+.worksCard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .linkCard {
+        text-decoration: none;
+    }
+
+    img {
+        width: 400px;
+        height: 250px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+
+    img:hover {
+        opacity: 0.66;
+    }
+    
+    h2 {
+        position: relative;
+        top: -20%;
+        left: 5%;
+        color: white;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .worksCard {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0px;
+    
+        .linkCard {
+            text-decoration: none;
+        }
+    
+        img {
+            width: 300px;
+            height: 180px;
+        }
+        
+        h2 {
+            font-size: 14px;
+        }
+    }
+}

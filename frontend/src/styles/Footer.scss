@@ -1,0 +1,16 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+@media screen and (max-width: 640px) {
+    .Footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        min-height: 150px;
+    }
+}
