@@ -9,7 +9,7 @@ const contactRoutes = require('./routes/contact');
 const compRoutes = require('./routes/comp');
 const path = require('path');
 
-mongoose.connect('mongodb+srv://@cluster0.lzaxby6.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.lzaxby6.mongodb.net/?retryWrites=true&w=majority',
     )
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
