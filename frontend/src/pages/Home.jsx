@@ -1,6 +1,6 @@
 import '../styles/Home.scss'
 import { NavLink } from 'react-router-dom';
-import banner from '../images/developerBanner.webp'
+import banner from '../images/banner.webp'
 import Button from '../components/Button';
 
 function Home() {

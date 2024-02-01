@@ -65,8 +65,9 @@ exports.getOneWork = (req, res, next) => {
 
 exports.modifyWork = async (req, res, next) => {
   try {
-    const workObject = req.file ? {
-      ...JSON.parse(req.body.work),
+    console.log(req.file)
+    const travailObject = req.file ? {
+      ...JSON.parse(req.body.travail),
       image: `${req.protocol}://${req.get('host')}/files/${req.file.filename}`
   } : { ...req.body };
 
@@ -82,15 +83,12 @@ exports.modifyWork = async (req, res, next) => {
         .toFile(outputPath);
 
       // Mise à jour de l'URL de l'image avec le nouveau fichier webp
-      workObject.image = `/files/${fileName}`;
+      travailObject.image = `/files/${fileName}`;
     }
 
-    await Travaux.updateOne({ _id: req.params.id }, { ...workObject, _id: req.params.id });
+    await Travaux.updateOne({ _id: req.params.id }, { ...travailObject, _id: req.params.id });
     res.status(200).json({ message: 'Objet modifié!' });
   } catch (error) {
-    console.error(error.message);
-    console.error(req.body);
-    console.error(req.file);
     res.status(500).json({ error: 'Erreur lors de la modification du travail' });
   }
 };
