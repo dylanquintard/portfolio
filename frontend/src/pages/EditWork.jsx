@@ -84,11 +84,11 @@ const EditWork = () => {
 
     const formData = new FormData();
     formData.append("image", image);
-    formData.append("travail", JSON.stringify(travailObject));
+    formData.append("work", JSON.stringify(travailObject));
 
     const token = localStorage.getItem('token');
 
-    axios.put(`https://api.quintarddylan.fr:4000/api/works/${travail._id}`, formData, {
+    axios.put(`https://api.quintarddylan.fr:4000/api/works/${work._id}`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${token}`,
