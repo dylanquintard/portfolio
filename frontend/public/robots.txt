@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://quintarddyan.fr/sitemap.xml
+Sitemap: https://quintarddylan.fr/sitemap.xml
